@@ -4,7 +4,7 @@ using namespace std;
  
 int main()
 {
-int fragment[20],b[20],p[20],i,j,nb,np,temp,lowest=9999;
+int b[20],p[20],i,j,nb,np,temp,lowest=9999;
 static int barray[20],parray[20];
 cout<<"\n\t\t\tMemory Management Scheme - Best Fit";
 cout<<"\nEnter the number of blocks:";
@@ -42,8 +42,8 @@ fragment[i]=lowest;
 barray[parray[i]]=1;
 lowest=10000;
 }
-cout<<"\nProcess_no\tProcess_size\tBlock_no\tBlock_size\tFragment";
+cout<<"\nProcess_no\tProcess_size\tBlock_no\tBlock_size;
 for(i=1;i<=np+1 && parray[i]!=0;i++)
-cout<<"\n"<<i<<"\t\t"<<p[i]<<"\t\t"<<parray[i]<<"\t\t"<<b[parray[i]]<<"\t\t"<<fragment[i];
+cout<<"\n"<<i<<"\t\t"<<p[i]<<"\t\t"<<parray[i]<<"\t\t"<<b[parray[i]];
 return 0;
 }
